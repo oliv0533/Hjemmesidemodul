@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#header {
+    background-color:black;
+    color:white;
+    text-align:center;
+    padding:5px;
+}
+#nav {
+    line-height:30px;
+    background-color:#eeeeee;
+    height:1100px;
+    width:100px;
+    float:left;
+    padding:5px;	      
+}
+#section {
+	width:90%;
+	height:1000px;
+    float:left;
+    padding:5px;	 	 
+}
+#footer {
+    background-color:black;
+    color:white;
+    clear:both;
+    text-align:center;
+	padding:5px;	 	 
+</style>
+<script type="text/javascript">
+  function iframeLoaded() {
+      var iFrameID = document.getElementById('idIframe');
+      if(iFrameID) {
+            iFrameID.height = "200";
+            iFrameID.height = iFrameID.contentWindow.document.body.scrollHeight + "px";
+      }   
+  }
+</script>   
+</head>
+<body>
+
+<div id="header">
+	<h1>Aarhus Tech</h1>
+</div>
+
+<div id="nav">
+<a href="HTML Paragraphs.html" target="iframe_a">Paragraphs</a><br>
+<a href="http://aarhustech.dk/" target="iframe_a">Aarhus Tech</a><br>
+Kageliste<br>
+test1<br>
+test1<br>
+test1<br>
+test1<br>
+test1<br>
+test1<br>
+</div>
+
+<div id="section">
+<h2>Oi mate!</h2>
+<iframe src="HTML Paragraphs.html" name="iframe_a" style="border:none" height="100%" width="100%"></iframe>
+</div>
+
+<div id="footer">
+Kage-rettigheder!
+</div>
+
+</body>
+</html>
